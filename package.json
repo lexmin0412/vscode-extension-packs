@@ -1,0 +1,33 @@
+{
+  "name": "vscode-extension-packs",
+  "version": "1.0.0",
+  "description": "VSCode Extension Packs for multiple stack development",
+  "main": "index.js",
+  "private": true,
+  "keywords": [
+    "vscode",
+    "extension",
+    "pack"
+  ],
+  "scripts": {
+    "newpkg": "yo generator-code"
+  },
+  "devDependencies": {
+    "yo": "^6.0.0",
+    "generator-code": "1.11.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexmin0412/vscode-extension-packs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lexmin0412/vscode-extension-packs/issues"
+  },
+  "homepage": "https://github.com/lexmin0412/vscode-extension-packs#readme",
+  "author": {
+    "name": "lexmin0412",
+    "email": "zhangle_dev@outlook.com",
+    "url": "https://github.com/lexmin0412"
+  },
+  "license": "ISC"
+}
