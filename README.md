@@ -20,3 +20,23 @@ git clone https://github.com/lexmin0412/vscode-extension-packs.git
 2. 点击顶部 Explorer 右侧的 `...` 图标。
 3. 选择本仓库目录下你想要安装的扩展包目录下的 .vsix 文件
 4. 安装完成后，重启 VSCode 生效。
+
+## 开发
+
+安装依赖：
+
+```shell
+pnpm install
+```
+
+新增包：
+
+```shell
+pnpm newpkg
+```
+
+打包插件：
+
+```shell
+pnpm --filter <package-name> package
+```
