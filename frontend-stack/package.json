@@ -18,13 +18,19 @@
     "directory": "frontend-stack"
   },
   "publisher": "lexmin0412",
-  "extensionPack": [ 
+  "extensionPack": [
+    "eamodio.gitlens",
+    "mikestead.dotenv",
+    "ms-azuretools.vscode-docker",
+    "ritwickdey.liveserver",
+    "skyride.vscode-chester-atom",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
-    "eamodio.gitlens",
-    "ritwickdey.liveserver",
-    "skyride.vscode-chester-atom"
+    "prisma.prisma",
+    "unifiedjs.vscode-mdx",
+    "foxundermoon.shell-format",
+    "svelte.svelte-vscode"
   ]
 }
