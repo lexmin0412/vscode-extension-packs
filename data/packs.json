@@ -1,0 +1,37 @@
+{
+	"packs": [
+		{
+			"name": "frontend-stack",
+			"version": "0.0.1",
+			"extensions": [
+				"eamodio.gitlens",
+				"mikestead.dotenv",
+				"ms-azuretools.vscode-docker",
+				"ritwickdey.liveserver",
+				"skyride.vscode-chester-atom",
+				"editorconfig.editorconfig",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"bradlc.vscode-tailwindcss",
+				"prisma.prisma",
+				"unifiedjs.vscode-mdx",
+				"foxundermoon.shell-format",
+				"svelte.svelte-vscode"
+			]
+		},
+		{
+			"name": "go-stack",
+			"version": "0.0.1",
+			"extensions": [
+				"eamodio.gitlens",
+				"mikestead.dotenv",
+				"ms-azuretools.vscode-docker",
+				"ritwickdey.liveserver",
+				"skyride.vscode-chester-atom",
+				"golang.go",
+				"r3inbowari.gomodexplorer",
+				"zxh404.vscode-proto3"
+			]
+		}
+	]
+}
