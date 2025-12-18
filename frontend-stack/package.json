@@ -1,0 +1,30 @@
+{
+  "name": "frontend-stack",
+  "displayName": "Frontend Stack",
+  "description": "All extensions you need for frontend development",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lexmin0412/vscode-extension-packs.git",
+    "directory": "frontend-stack"
+  },
+  "publisher": "lexmin0412",
+  "extensionPack": [ 
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "eamodio.gitlens",
+    "ritwickdey.liveserver",
+    "skyride.vscode-chester-atom"
+  ]
+}
