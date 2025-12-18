@@ -1,19 +1,22 @@
 # VSCode Extension Packs
 
-This repository contains curated extension packs for Visual Studio Code, designed to enhance development workflows for various stacks.
+VSCode 不同技术栈的扩展包合集，一次安装适合所需技术栈的所有扩展，适用于 VSCode 及 Cursor、Windsurf、Trae、CodeBuddy、Qoder、Comate 等 AI 编程工具。
 
-## Available Extension Packs
+## 可用扩展包
 
-### Frontend Stack
+- Frontend Stack
+- Go Stack
 
-The [Frontend Stack](frontend-stack/README.md) extension pack includes essential tools for frontend development:
-- Code formatting
-- Linting
-- Version control
-- Live server
-- Tailwind CSS IntelliSense
-- And more!
+## 安装方式
 
-For more details, see the [Frontend Stack README](frontend-stack/README.md).
+clone 本仓库：
 
+```bash
+git clone https://github.com/lexmin0412/vscode-extension-packs.git
+```
 
+打开 VSCode, 并按照以下步骤安装扩展包：
+1. 点击左侧活动栏的扩展图标（或使用快捷键 `Ctrl+Shift+X`）。
+2. 点击顶部 Explorer 右侧的 `...` 图标。
+3. 选择本仓库目录下你想要安装的扩展包目录下的 .vsix 文件
+4. 安装完成后，重启 VSCode 生效。

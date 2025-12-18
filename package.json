@@ -7,10 +7,18 @@
   "keywords": [
     "vscode",
     "extension",
-    "pack"
+    "pack",
+    "development",
+    "frontend",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+    "golang",
+    "go"
   ],
   "scripts": {
-    "newpkg": "yo generator-code"
+    "newpkg": "yo code"
   },
   "devDependencies": {
     "yo": "^6.0.0",
