@@ -1,6 +1,10 @@
 # VSCode Extension Packs
 
-VSCode 不同技术栈的扩展包合集，一次安装适合所需技术栈的所有扩展。适用于 VSCode 及 Cursor、Windsurf、Trae、CodeBuddy、Qoder、Comate 等 AI 编程工具。
+VSCode 多技术栈扩展包合集，实现跨设备的插件配置统一。深度适配 VSCode 及 Cursor、Trae、Windsurf、Qoder、CodeBuddy、Comate 等主流 AI 编程工具。
+
+## Why me ?
+
+当你在多个设备上都使用 VSCode 进行开发，或者同时使用多个基于 VSCode 的 AI 编程工具（如 Cursor、Trae、Windsurf、Qoder、CodeBuddy、Comate），希望在不同设备/IDE上保持一致的插件配置时，安装一个扩展包就可以达到目的。通过此项目，你可以基于自己的喜好，修改 `data/packs.json` 文件，自定义你所需的插件列表，然后一键打包、快速安装。
 
 ## 📦 可用扩展包
 
@@ -25,7 +29,7 @@ VSCode 不同技术栈的扩展包合集，一次安装适合所需技术栈的�
 
 ## 🛠️ 开发指南
 
-本项目采用 pnpm monorepo 结构，配置信息统一在 `data/packs.json` 中管理。
+本项目采用 **配置驱动 (Configuration-driven)** 的 pnpm monorepo 结构，子包的生成完全自动化。
 
 ### 环境准备
 
@@ -36,10 +40,17 @@ pnpm install
 ### 核心工作流
 
 1. **修改配置**: 在 `data/packs.json` 中添加或修改扩展包及其包含的扩展 ID。
-2. **同步配置**: 运行以下命令，根据 `data/packs.json` 自动更新所有 package 的 `package.json`。
+2. **自动化生成**: 运行以下命令，系统将根据 `scripts/templates` 中的 Handlebars 模板自动创建/更新子包的所有核心文件。
    ```bash
    pnpm generate
    ```
+   该命令会自动同步以下文件到每个子包：
+   - `package.json` (动态渲染)
+   - `README.md` (动态渲染)
+   - `.vscode/settings.json` (固定模板)
+   - `.gitignore` (固定模板)
+   - `LICENSE.txt` (固定模板)
+
 3. **打包**:
    - 打包所有扩展包:
      ```bash
@@ -50,12 +61,13 @@ pnpm install
      pnpm --filter <package-name> package
      ```
 
-### 新增扩展包
+### 模板自定义
 
-1. 在 `data/packs.json` 中添加新的配置项。
-2. 运行 `pnpm generate` 自动创建 package 目录及初始文件。
-3. (可选) 使用 `pnpm newpkg` (通过 `yo code`) 手动初始化更复杂的 package 结构。
+如果你需要调整子包的默认生成内容，可以修改 `scripts/templates` 目录下的文件：
+- `package.json.hbs`: 扩展包元数据模板。
+- `README.md.hbs`: 扩展包说明文档模板。
+- `static/`: 包含所有需要原样同步到子包的静态配置文件。
 
 ## 📄 开源协议
 
-[ISC](./LICENSE.txt)
+[MIT](./LICENSE.txt)
