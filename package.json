@@ -19,12 +19,13 @@
   ],
   "scripts": {
     "newpkg": "yo code",
-    "generate": "tsx scripts/gen-pkgs.ts",
+    "generate": "tsx scripts/scaffold.ts",
     "build:all": "pnpm -r package"
   },
   "devDependencies": {
     "@types/node": "^25.0.3",
     "generator-code": "1.11.15",
+    "handlebars": "^4.7.8",
     "tsx": "^4.21.0",
     "yo": "^6.0.0"
   },
