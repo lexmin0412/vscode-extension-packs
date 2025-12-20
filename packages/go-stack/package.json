@@ -1,7 +1,7 @@
 {
   "name": "go-stack",
   "displayName": "Go Stack",
-  "description": "All extensions you need for golang development",
+  "description": "All extensions you need for go development",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -15,10 +15,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lexmin0412/vscode-extension-packs.git",
-    "directory": "go-stack"
+    "directory": "packages/go-stack"
   },
   "publisher": "lexmin0412",
-  "extensionPack": [ 
+  "extensionPack": [
     "eamodio.gitlens",
     "mikestead.dotenv",
     "ms-azuretools.vscode-docker",

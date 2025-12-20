@@ -15,7 +15,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lexmin0412/vscode-extension-packs.git",
-    "directory": "frontend-stack"
+    "directory": "packages/frontend-stack"
   },
   "publisher": "lexmin0412",
   "extensionPack": [
