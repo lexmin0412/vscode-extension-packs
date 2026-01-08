@@ -1,6 +1,6 @@
 # VSCode Extension Packs
 
-VSCode 多技术栈扩展包合集，实现跨设备的插件配置统一。深度适配 VSCode 及 Cursor、Trae、Windsurf、Qoder、CodeBuddy、Comate 等主流 AI 编程工具。
+VSCode 多技术栈扩展包合集及生成工具，实现跨设备的插件配置统一。深度适配 VSCode 及 Cursor、Trae、Windsurf、Qoder、CodeBuddy、Comate 等主流 AI 编程工具。
 
 ## Why me ?
 
