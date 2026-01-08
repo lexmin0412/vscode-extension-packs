@@ -26,6 +26,7 @@
     "skyride.vscode-chester-atom",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
+    "oxc.oxc-vscode",
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
     "prisma.prisma",
